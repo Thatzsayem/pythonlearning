@@ -1,8 +1,12 @@
-number = int(input("Which number do you want to change ?"))
-test = number / 2
-c = number % 2
-print(c)
-if number % 2 == 0:
-    print("This is even number")
+year = int(input("What is the year "))
+print("Here is the number of year  " + str(year))
+if year % 4 == 0:
+    if year % 100 == 0:
+        if year % 400 == 0:
+            print("This is Leap Year")
+        else:
+            print("Not Leap Year")
+    else:
+        print("This is Leap year. ")
 else:
-    print("This is odd number")
+  print("This is not leap year.")
